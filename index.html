@@ -4,40 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./assets/CSS/style.css" rel="stylesheet">
-    
     <title>Code Quiz</title>
   </head>
-
   <body>
-    <header>
-    <div id="timer-display">Timer</div>
-    <div id="scores">Scores</div>
-    </header>
-
-    <div class="container">
-
-        <div id="question-container" class="">
-            <div id="questions">Question text</div>
-            <div id="answers">
-                <button class="answer-btn">Answer 1</button>
-                <button class="answer-btn">Answer 2</button>
-                <button class="answer-btn">Answer 3</button>
-                <button class="answer-btn">Answer 4</button>
-            </div>
-            
-        </div>
-
-        <div id="right-or-wrong">"Wrong/Right"</div>
-
-
-        <div class="start-container">
-            <button id="start-btn" class="start">Start</button>
-        </div>
-
-
-
-        <script src="./assets/js/script.js"></script>
+    <nav>
+      <div>View highscore</div>
+      <div id="Timer">Time: <span id="time"></span></div>
+    </nav>
+    <main>
+        <div id="start-screen" class="start">
+            <button id="startBtn">Start Quiz</button>       
+             <h1>Cool  Quiz</h1>                     
+            </div>      
+              <div id="questions" class="hide">        
+                  <h2 id="question-title"></h2>        
+                  <div id="options" class="options"></div>      
+                </div>
+      </div>
+    </main>
+    <script src="./app.js"></script>
   </body>
-
 </html>
